@@ -1,5 +1,3 @@
-increase_warning_level()
-
 project(midi)
 
 add_library(midi STATIC
@@ -12,4 +10,7 @@ add_library(midi STATIC
     MIDI.hpp
     MIDI.h
     serialMIDI.h
+    USB-MIDI_Namespace.h
+    USB-MIDI_defs.hpp
+    USB-MIDI.h
 )
