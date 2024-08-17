@@ -11,6 +11,11 @@ add_library(midi STATIC
     MIDI.h
     serialMIDI.h
     USB-MIDI_Namespace.h
-    USB-MIDI_defs.hpp
+    USB-MIDI_defs.h
     USB-MIDI.h
 )
+target_link_libraries(midi PRIVATE
+    pico_stdlib
+    hardware_uart
+    tinyusb_device 
+    tinyusb_board )
